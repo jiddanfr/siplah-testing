@@ -35,11 +35,7 @@ context('Actions', () => {
         .get(':nth-child(8) > :nth-child(1) > .checkbox-round > .checkmark')
         .click()
         .get('.large-4 > form.ng-valid > .button')
-        .click()
-        cy
-
-      
-        
+        .click();
     })
 
     })
