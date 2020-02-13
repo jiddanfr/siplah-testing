@@ -36,6 +36,19 @@ context('Actions', () => {
         .click()
         .get('.large-4 > form.ng-valid > .button')
         .click();
+        cy
+        .get(':nth-child(1) > .large-4 > .button')
+        .click()
+        .get('.relative > .f-qsand')
+        .click()
+        .type('1234')
+        .get('.large-12 > .ng-valid > .button')
+        .click()
+        .wait(10000)
+        .get('.relative > .f-qsand')
+        .type('jiddanfajar12@gmail.com')
+        .get('.large-12 > form.ng-untouched > .button')
+        .click()
     })
 
     })
