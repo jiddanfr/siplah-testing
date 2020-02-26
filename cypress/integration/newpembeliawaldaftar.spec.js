@@ -9,18 +9,36 @@ context('Actions', () => {
         .get('#btn_masuk') //menggerakkan kursor yang di inginkan
         .click()//meng klik yang di inginkan
         .get('#usernameLoginRef')
-        .type('pembeli@gmail.com')//memasukkan dari keyboard
+        .type('jiddanfajar12@gmail.com')//memasukkan dari keyboard
         .get('.product-content > .mt15 > .grid-x > .large-12 > :nth-child(3) > .ng-untouched')
         .type('1234')
         .get('#reveal-masuk > .product-content > .mt15 > .grid-x > .large-12 > .button')
         .click()
         cy
-        //.wait(8000)
-        //.get('.rounded-img')
-        //.click()
-        //.get('#nav-user > .nav-dropdown > :nth-child(1)')
-        //.click()
-        //.wait(5000)
+        .wait(8000)
+        .get('.rounded-img')
+        .click()
+        .get('#nav-user > .nav-dropdown > :nth-child(1)')
+        .click()
+        .wait(5000)
+        .get('#namaToko-input')
+        .type('mebelisasi')
+        .get('#namaDomain-input')
+        .type('mebelisasi.com')
+        .get('#namaCategory-input')
+        .select('Meubelair')
+        .get('#formA > .button')
+        .click()
+        .wait(5000)
+        .get('.large-7 > .button')
+        .click()
+        .get('#formB > .button')
+        .click()
+        .get('#progressbar-finish-fn')
+        .click()
+        .get('#formD > .button')
+        .click()
+        .wait(5000)
         //.get('.relative > .input-text')
         //.click()
         //.clear()
@@ -90,9 +108,6 @@ context('Actions', () => {
         //.get(':nth-child(16) > .input-text')//merubah bujur
         //.clear()
         //.type('zxczxc')
-
-
-       
-    })
+        })
 
     })
