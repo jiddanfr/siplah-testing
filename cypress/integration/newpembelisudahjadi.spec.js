@@ -16,10 +16,55 @@ context('Actions', () => {
         .click()
         cy
         .wait(8000)
-        .get('.rounded-img')
+        .get('#index-kategori > .kategoriicon > :nth-child(1)')
         .click()
-        .get('#nav-user > .nav-dropdown > :nth-child(1)')
+        .get('.breadcrumbs > :nth-child(1) > a > .fa') //kembali ke home
         .click()
+        .wait(5000)
+        .get('#index-kategori > .kategoriicon > :nth-child(2) > a') //bos affirmasi dan kinerja
+        .click()
+        .wait(2000)
+        .get('.breadcrumbs > :nth-child(1) > a > .fa') //kembali ke home
+        .click()
+        .wait(2000)
+        .get('#index-kategori > .kategoriicon > :nth-child(3) > a') // komputer laptop dan aksesoris
+        .click()
+        .wait(2000)
+        .get('.breadcrumbs > :nth-child(1) > a > .fa') //kembali ke home
+        .click()
+        .wait(2000)
+        .get('#index-kategori > .kategoriicon > :nth-child(4) > a') // atk dan fotokopi
+        .click()
+        .wait(2000)
+        .get('.breadcrumbs > :nth-child(1) > a > .fa') //kembali ke home
+        .click()
+        .get('#index-kategori > .kategoriicon > :nth-child(5) > a') //alat peraga dan pendidikan
+        .click()
+        .wait(2000)
+        .get('.breadcrumbs > :nth-child(1) > a > .fa') //kembali ke home
+        .click()
+        .get('#index-kategori > .kategoriicon > :nth-child(6) > a') //peralatan kesehatan sekolah
+        .click()
+        .wait(2000)
+        .get('.breadcrumbs > :nth-child(1) > a > .fa') //kembali ke home
+        .click()
+        .wait(2000)
+        .get('#index-kategori > .kategoriicon > :nth-child(7) > a') //meubelair
+        .click()
+        .wait(2000)
+        .get('.breadcrumbs > :nth-child(1) > a > .fa') //kembali ke home
+        .click()
+        .get('#index-kategori > .kategoriicon > :nth-child(8) > a') //elektronik dan mekanikal
+        .click()
+        .wait(2000)
+        .get('.breadcrumbs > :nth-child(1) > a > .fa') //kembali ke home
+        .click()
+        .get('#index-kategori > .kategoriicon > .all-category > .f12') //semua kategori
+        .click()
+
+        //.get('.breadcrumbs > :nth-child(2) > a') //ke kategori
+        //.click()
+
 
         //.get('.relative > .input-text')
         //.click()

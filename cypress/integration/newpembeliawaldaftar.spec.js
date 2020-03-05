@@ -108,6 +108,15 @@ context('Actions', () => {
         //.get(':nth-child(16) > .input-text')//merubah bujur
         //.clear()
         //.type('zxczxc')
+
+        //TENTANG KAMI
+
+        //.get('.rounded-img') //masuk tntang kami 
+        //.click()
+        //.get('#nav-user > .nav-dropdown > :nth-child(1)') // masuk pengaturan akun
+        //.click()
+        //.get('#trigger-mega-header') //masuk kategori
+        //.click()
         })
 
     })
