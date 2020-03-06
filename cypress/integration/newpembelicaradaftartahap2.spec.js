@@ -19,6 +19,18 @@ context('Actions', () => {
         .click()
         .get('#nav-user > .nav-dropdown > :nth-child(1)') // masuk pengaturan akun
         .click()
+        .get(':nth-child(3) > :nth-child(1) > .small-12 > .button') //atur rekening
+        .click()
+        .get(':nth-child(1) > .relative > .input-text')
+        .type('1234567890')
+        .get(':nth-child(2) > .relative > .input-text')
+        .type('1234567890')
+        .get('.relative > .kategori-select')
+        .select('BANK NTT')
+        .get(':nth-child(4) > .relative > .input-text')
+        .type('pasuruan')
+        .get(':nth-child(2) > .small-12 > .button-blue')
+        .click()
         
     })
 })

@@ -16,7 +16,17 @@ context('Actions', () => {
         .click()
         cy
         .wait(8000)
-        .get('#index-kategori > .kategoriicon > :nth-child(1)')
+        .get('#index-kategori > .kategoriicon > :nth-child(1)') 
+        .click()
+        .get('.product-content > .name') //MENUJU produk pertaama buku
+        .click()
+        .get('#collapsing-tabs > :nth-child(2) > a') //melihat diskusi
+        .click()
+        .get('#collapsing-tabs > :nth-child(3) > a') //melihat ulasan
+        .click()
+        .get('#collapsing-tabs > :nth-child(4) > a') //melihat catatan toko
+        .click()
+        .get('#collapsing-tabs > :nth-child(1) > a') //melihat deskripsi
         .click()
         .get('.breadcrumbs > :nth-child(1) > a > .fa') //kembali ke home
         .click()
@@ -35,6 +45,7 @@ context('Actions', () => {
         .wait(2000)
         .get('#index-kategori > .kategoriicon > :nth-child(4) > a') // atk dan fotokopi
         .click()
+
         .wait(2000)
         .get('.breadcrumbs > :nth-child(1) > a > .fa') //kembali ke home
         .click()
@@ -61,6 +72,7 @@ context('Actions', () => {
         .click()
         .get('#index-kategori > .kategoriicon > .all-category > .f12') //semua kategori
         .click()
+        
 
         //.get('.breadcrumbs > :nth-child(2) > a') //ke kategori
         //.click()
