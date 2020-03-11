@@ -16,68 +16,29 @@ context('Actions', () => {
         .click()
         cy
         .wait(8000)
-        .get('#index-kategori > .kategoriicon > :nth-child(1)') 
+        .get('.rounded-img')
         .click()
-        .get('.product-content > .name') //MENUJU produk pertaama buku
-        .click()
-        .get('#collapsing-tabs > :nth-child(2) > a') //melihat diskusi
-        .click()
-        .get('#collapsing-tabs > :nth-child(3) > a') //melihat ulasan
-        .click()
-        .get('#collapsing-tabs > :nth-child(4) > a') //melihat catatan toko
-        .click()
-        .get('#collapsing-tabs > :nth-child(1) > a') //melihat deskripsi
-        .click()
-        .get('.breadcrumbs > :nth-child(1) > a > .fa') //kembali ke home
+        .get('#nav-user > .nav-dropdown > :nth-child(1)')
         .click()
         .wait(5000)
-        .get('#index-kategori > .kategoriicon > :nth-child(2) > a') //bos affirmasi dan kinerja
+        .get('#namaToko-input')
+        .type('mebelisasi')
+        .get('#namaDomain-input')
+        .type('mebelisasi.com')
+        .get('#namaCategory-input')
+        .select('Meubelair')
+        .get('#formA > .button')
         .click()
-        .wait(2000)
-        .get('.breadcrumbs > :nth-child(1) > a > .fa') //kembali ke home
+        .wait(5000)
+        .get('.large-7 > .button')
         .click()
-        .wait(2000)
-        .get('#index-kategori > .kategoriicon > :nth-child(3) > a') // komputer laptop dan aksesoris
+        .get('#formB > .button')
         .click()
-        .wait(2000)
-        .get('.breadcrumbs > :nth-child(1) > a > .fa') //kembali ke home
+        .get('#progressbar-finish-fn')
         .click()
-        .wait(2000)
-        .get('#index-kategori > .kategoriicon > :nth-child(4) > a') // atk dan fotokopi
+        .get('#formD > .button')
         .click()
-
-        .wait(2000)
-        .get('.breadcrumbs > :nth-child(1) > a > .fa') //kembali ke home
-        .click()
-        .get('#index-kategori > .kategoriicon > :nth-child(5) > a') //alat peraga dan pendidikan
-        .click()
-        .wait(2000)
-        .get('.breadcrumbs > :nth-child(1) > a > .fa') //kembali ke home
-        .click()
-        .get('#index-kategori > .kategoriicon > :nth-child(6) > a') //peralatan kesehatan sekolah
-        .click()
-        .wait(2000)
-        .get('.breadcrumbs > :nth-child(1) > a > .fa') //kembali ke home
-        .click()
-        .wait(2000)
-        .get('#index-kategori > .kategoriicon > :nth-child(7) > a') //meubelair
-        .click()
-        .wait(2000)
-        .get('.breadcrumbs > :nth-child(1) > a > .fa') //kembali ke home
-        .click()
-        .get('#index-kategori > .kategoriicon > :nth-child(8) > a') //elektronik dan mekanikal
-        .click()
-        .wait(2000)
-        .get('.breadcrumbs > :nth-child(1) > a > .fa') //kembali ke home
-        .click()
-        .get('#index-kategori > .kategoriicon > .all-category > .f12') //semua kategori
-        .click()
-        
-
-        //.get('.breadcrumbs > :nth-child(2) > a') //ke kategori
-        //.click()
-
-
+        .wait(5000)
         //.get('.relative > .input-text')
         //.click()
         //.clear()
@@ -147,6 +108,15 @@ context('Actions', () => {
         //.get(':nth-child(16) > .input-text')//merubah bujur
         //.clear()
         //.type('zxczxc')
+
+        //TENTANG KAMI
+
+        //.get('.rounded-img') //masuk tntang kami 
+        //.click()
+        //.get('#nav-user > .nav-dropdown > :nth-child(1)') // masuk pengaturan akun
+        //.click()
+        //.get('#trigger-mega-header') //masuk kategori
+        //.click()
         })
 
     })
